@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style type="text/css">
+	.triangle1 {
+		height: 0;
+		width: 0;
+		border-style: solid;
+		border-color: #0000ff #ffff00 #008000 #ff0000;
+		border-width: 40px 40px 40px 40px;
+	}
+	.triangle2 {
+		margin-top: 20px;
+		height: 0;
+		width: 0;
+		border-style: solid;
+		border-color: #0000ff transparent transparent transparent;
+		border-width: 40px 40px 40px 40px;
+	}
+	.triangle3 {
+		margin-top: 20px;
+		height: 0;
+		width: 0;
+		border-style: solid;
+		border-color: transparent transparent transparent #ff0000;
+		border-width: 40px 40px 40px 40px;
+	}
+	.triangle4 {
+		margin-top: 20px;
+		height: 0;
+		width: 0;
+		border-style: solid;
+		border-color: transparent #ffff00 transparent transparent;
+		border-width: 40px 40px 40px 40px;
+	}
+	.triangle5 {
+		margin-top: 20px;
+		height: 0;
+		width: 0;
+		border-style: solid;
+		border-color: transparent  transparent #008000 transparent;
+		border-width: 40px 40px 40px 40px;
+	}
+		.triangle6 {
+		height: 0;
+		width: 0;
+		border-style: solid;
+		margin-top: 20px;
+		border-color: transparent transparent transparent #ff0000;
+		border-width: 40px 40px 0px 40px;
+	}
+		.triangle7 {
+		height: 0;
+		width: 0;
+		border-style: solid;
+		margin-top: 20px;
+		border-color: transparent transparent #008000 transparent;
+		border-width: 40px 0px 40px 40px;
+	}
+	/* IE6不支持transparent，所以不会透明而会显示难看的黑色，不过也有解决方法：将透明的部分对应的border-style
+	*	.triangle {
+	*	    border-color: #ff0000 transparent transparent transparent;
+	*	    border-style: solid dashed dashed dashed;
+	*	    border-width: 40px 40px 40px 40px;
+	*	}
+	*/
+</style>
+</head>
+<body>
+	<div class="triangle1"></div>
+	<p>1. 四个三角形合成一个正方形，大小为80x80，如果我们只想保留其中某个三角形的话，将其它的设置为透明即可</p>
+	<div class="triangle2"></div>
+	<div class="triangle3"></div>
+	<div class="triangle4"></div>
+	<div class="triangle5"></div>
+	<p>2. 如果将border-width的某一边设为0又会怎么样呢？也算是两种情况</p>
+	<div class="triangle6"></div>
+	<div class="triangle7"></div>
+</body>
+</html>
